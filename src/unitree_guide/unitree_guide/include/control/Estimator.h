@@ -27,16 +27,17 @@
 
 class Estimator{
 public:
-    Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState, VecInt4 *contact, Vec4 *phase, double dt);
-    Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState, VecInt4 *contact, Vec4 *phase, double dt, Vec18 Qdig, std::string testName);
+    // 构造函数，调用了_initSystem函数，完成了所有参数的初始化
+    Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState, VecInt4 *contact, Vec4 *phase, double *dt);
+    Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState, VecInt4 *contact, Vec4 *phase, double *dt, Vec18 Qdig, std::string testName);
     ~Estimator();
-    Vec3  getPosition();
-    Vec3  getVelocity();
-    Vec3  getFootPos(int i);
-    Vec34 getFeetPos();
-    Vec34 getFeetVel();
-    Vec34 getPosFeet2BGlobal();
-    void run();
+    Vec3  getPosition(); // 返回机器人中心的当前位置
+    Vec3  getVelocity(); // 返回机器人中心的当前速度
+    Vec3  getFootPos(int i); // 返回第i号足端在世界坐标系下的位置
+    Vec34 getFeetPos(); // 返回所有足端在世界坐标系下的位置，相当于执行了四次getFootPos(i)，这是一个函数重载
+    Vec34 getFeetVel(); // 返回所有足端在世界坐标系下的速度
+    Vec34 getPosFeet2BGlobal(); // 返回所有足端在世界坐标系下相对于机身中心的位置
+    void run(); // 估计器运行一步
 
 #ifdef COMPILE_DEBUG
     void setPyPlot(PyPlot *plot){_testPlot = plot;}
@@ -81,7 +82,7 @@ private:
     QuadrupedRobot *_robModel;
     Vec4 *_phase;
     VecInt4 *_contact;
-    double _dt;
+    double *_dt;
     double _trust;
     double _largeVariance;
 
@@ -89,7 +90,7 @@ private:
     LPFilter *_vxFilter, *_vyFilter, *_vzFilter;
 
     // Tuning
-    AvgCov *_RCheck;
+    AvgCov *_RCheck; // AbgCov类是用来计算均值和协方差
     AvgCov *_uCheck;
     std::string _estName;
 

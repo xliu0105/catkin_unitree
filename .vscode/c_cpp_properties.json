@@ -10,7 +10,9 @@
         "/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_controller/include/**",
         "/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_legged_control/include/**",
         "/usr/include/**",
-        "src/unitree_guide/unitree_guide/include/**"
+        "/usr/local/include/**",
+        "src/unitree_guide/unitree_guide/include/**",
+        "devel/include/unitree_legged_msgs/**"
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",

@@ -17,10 +17,11 @@ enum class RobotType{
     Go1
 };
 
-enum class UserCommand{
+enum class UserCommand{ // 用户命令状态，包括无效状态，开始，停止，固定站立，被动，自由站立，move_base，平衡测试，摆动测试，步态测试
     // EXIT,
     NONE,
     START,      // trotting
+    START_CUSTOM,   // 自定义的trotting
     L2_A,       // fixedStand
     L2_B,       // passive
     L2_X,       // freeStand
@@ -51,11 +52,12 @@ enum class FSMMode{
 
 enum class FSMStateName{
     // EXIT,
-    INVALID,
+    INVALID, // 无效状态
     PASSIVE,
     FIXEDSTAND,
     FREESTAND,
     TROTTING,
+    CUSTOM_TROTTING, // 自定义的trotting状态
 #ifdef COMPILE_WITH_MOVE_BASE
     MOVE_BASE,       // move_base
 #endif  // COMPILE_WITH_MOVE_BASE

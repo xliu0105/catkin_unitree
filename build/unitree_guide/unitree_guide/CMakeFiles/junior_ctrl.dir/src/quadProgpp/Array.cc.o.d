@@ -157,8 +157,10 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o
  /usr/include/c++/9/bits/unique_ptr.h /usr/include/c++/9/utility \
  /usr/include/c++/9/bits/stl_relops.h /usr/include/c++/9/tuple \
  /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
- /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/bits/quoted_string.h \
+ /usr/include/c++/9/sstream /usr/include/c++/9/bits/sstream.tcc \
+ /usr/include/c++/9/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \

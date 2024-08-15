@@ -48,6 +48,7 @@ inline T0 killZeroOffset(T0 a, const T1 limit){
     return a;
 }
 
+// 反归一化函数，value是归一化后的值，min是原始数据范围的最小值，max是原始数据范围的最大值，minLim是归一化后范围的最小值(默认为-1)，maxLim是归一化后范围的最大值(默认为1)
 template<typename T0, typename T1, typename T2>
 inline T1 invNormalize(const T0 value, const T1 min, const T2 max, const double minLim = -1, const double maxLim = 1){
 	return (value-minLim)*(max-min)/(maxLim-minLim) + min;
@@ -175,7 +176,7 @@ inline RotMat quatToRotMat(const Quat& q) {
             1 - 2 * (e1 * e1 + e2 * e2);
     return R;
 }
-
+// 将旋转矩阵转为旋转向量
 inline Vec3 rotMatToExp(const RotMat& rm){
     double cosValue = rm.trace()/2.0-1/2.0;
     if(cosValue > 1.0f){
@@ -251,7 +252,7 @@ public:
         _defaultWeight.setIdentity();
         _measureCount = 0;
     }
-    void measure(VecX newValue){
+    void measure(VecX newValue){ // 在程序运行时，可以执行measure函数
         ++_measureCount;
 
         if(_measureCount > _waitCount){
@@ -269,13 +270,13 @@ private:
     VecX _exp;
     MatX _cov;
     MatX _defaultWeight;
-    bool _avgOnly;
-    unsigned int _size;
+    bool _avgOnly; // 如果为true，在显示结果时，只显示平均值，不显示协方差，这样终端输出会更简洁
+    unsigned int _size; // 计算对象的维度，如果要测量一个3维向量的均值和协方差，size=3
     unsigned int _measureCount;
-    unsigned int _showPeriod;
-    unsigned int _waitCount;
-    double _zoomFactor;
-    std::string _valueName;
+    unsigned int _showPeriod; // 每隔多少次测量，显示一次结果，如果为1000，则每1000次测量显示一次结果
+    unsigned int _waitCount; // 等待多少次测量后，开始计算均值和协方差。在机器人刚启动时，由于存在运动，读取的结果扰动可能比较大，可以在估计器启动一段时间后再计算均值和协方差
+    double _zoomFactor; // 显示结果时，对均值和协方差乘以的放大倍数，如果为10000，则显示的均值和协方差都会乘以10000
+    std::string _valueName; // 用于显示的名称
 };
 
 #endif  // MATHTOOLS_H

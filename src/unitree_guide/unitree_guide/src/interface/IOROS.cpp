@@ -29,7 +29,7 @@ IOROS::IOROS():IOInterface(){
 
     signal(SIGINT, RosShutDown);
 
-    cmdPanel = new KeyBoard();
+    cmdPanel = new KeyBoard(); // 创建键盘控制面板
 }
 
 IOROS::~IOROS(){
@@ -41,7 +41,7 @@ void IOROS::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
     sendCmd(cmd);
     recvState(state);
 
-    state->userCmd = cmdPanel->getUserCmd();
+    state->userCmd = cmdPanel->getUserCmd(); // 获取键盘控制面板的用户命令
     state->userValue = cmdPanel->getUserValue();
 }
 
@@ -125,9 +125,9 @@ void IOROS::imuCallback(const sensor_msgs::Imu & msg)
 void IOROS::FRhipCallback(const unitree_legged_msgs::MotorState& msg)
 {
     _lowState.motorState[0].mode = msg.mode;
-    _lowState.motorState[0].q = msg.q;
-    _lowState.motorState[0].dq = msg.dq;
-    _lowState.motorState[0].tauEst = msg.tauEst;
+    _lowState.motorState[0].q = msg.q; // 关节角度
+    _lowState.motorState[0].dq = msg.dq; // 关节角速度
+    _lowState.motorState[0].tauEst = msg.tauEst; // 关节力矩
 }
 
 void IOROS::FRthighCallback(const unitree_legged_msgs::MotorState& msg)

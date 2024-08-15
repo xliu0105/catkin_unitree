@@ -6,7 +6,7 @@
 #include "common/enumClass.h"
 
 Estimator::Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState, 
-                     VecInt4 *contact, Vec4 *phase, double dt, Vec18 Qdig,
+                     VecInt4 *contact, Vec4 *phase, double *dt, Vec18 Qdig,
                      std::string testName)
           :_robModel(robotModel), _lowState(lowState), _contact(contact),
            _phase(phase), _dt(dt), _Qdig(Qdig), _estName(testName){
@@ -15,7 +15,7 @@ Estimator::Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState,
 }
 
 Estimator::Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState, 
-                     VecInt4 *contact, Vec4 *phase, double dt)
+                     VecInt4 *contact, Vec4 *phase, double *dt)
           :_robModel(robotModel), _lowState(lowState), _contact(contact), 
            _phase(phase), _dt(dt){
 
@@ -48,11 +48,11 @@ void Estimator::_initSystem(){
     _u.setZero();
     _A.setZero();
     _A.block(0, 0, 3, 3) = I3;
-    _A.block(0, 3, 3, 3) = I3 * _dt;
+    _A.block(0, 3, 3, 3) = I3 * (*_dt);
     _A.block(3, 3, 3, 3) = I3;
     _A.block(6, 6, 12, 12) = I12;
     _B.setZero();
-    _B.block(3, 0, 3, 3) = I3 * _dt;
+    _B.block(3, 0, 3, 3) = I3 * (*_dt);
     _C.setZero();
     _C.block(0, 0, 3, 3) = -I3;
     _C.block(3, 0, 3, 3) = -I3;
@@ -110,9 +110,9 @@ void Estimator::_initSystem(){
     _RCheck  = new AvgCov(28, _estName + " R");
     _uCheck  = new AvgCov(3,  _estName + " u");
 
-    _vxFilter = new LPFilter(_dt, 3.0);
-    _vyFilter = new LPFilter(_dt, 3.0);
-    _vzFilter = new LPFilter(_dt, 3.0);
+    _vxFilter = new LPFilter((*_dt), 3.0);
+    _vyFilter = new LPFilter((*_dt), 3.0);
+    _vzFilter = new LPFilter((*_dt), 3.0);
 
 
     /* ROS odometry publisher */
@@ -169,7 +169,7 @@ void Estimator::run(){
     _vzFilter->addValue(_xhat(5));
 
     #ifdef COMPILE_WITH_MOVE_BASE
-        if(_count % ((int)( 1.0/(_dt*_pubFreq))) == 0){
+        if(_count % ((int)( 1.0/((*_dt)*_pubFreq))) == 0){
             _currentTime = ros::Time::now();
             /* tf */
             _odomTF.header.stamp = _currentTime;

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
 project(unitree_guide)
 
-set(ROBOT_TYPE Go1)         # The type of robot, support Go1 and A1 currently
+set(ROBOT_TYPE A1)         # The type of robot, support Go1 and A1 currently
 set(PLATFORM amd64)         # The platform to compile, support amd64 and arm64
 
 set(CATKIN_MAKE ON)        # Use CATKIN_MAKE or not, ON or OFF
@@ -18,7 +18,7 @@ if(NOT DEFINED PLATFORM)
 endif()
 
 if(${ROBOT_TYPE} STREQUAL "A1")
-    add_definitions(-DROBOT_TYPE_A1)
+    add_definitions(-DROBOT_TYPE_A1) # add_definitions是将宏ROBOT_TYPE_A1全局定义，所有的源文件都能看到这个宏，注意add_definitions后面括号中，在宏的名字前面加-D
 elseif(${ROBOT_TYPE} STREQUAL "Go1")
     add_definitions(-DROBOT_TYPE_Go1)
 else()
@@ -69,6 +69,8 @@ if(CATKIN_MAKE)
         geometry_msgs
         unitree_legged_msgs
     )
+    find_package(OsqpEigen REQUIRED)
+    find_package(osqp REQUIRED)
     catkin_package(
         CATKIN_DEPENDS 
         unitree_legged_msgs 
@@ -121,7 +123,7 @@ file(GLOB_RECURSE SRC_LIST
 
 add_executable(junior_ctrl src/main.cpp ${SRC_LIST})
 if(CATKIN_MAKE)
-    target_link_libraries(junior_ctrl ${catkin_LIBRARIES})
+    target_link_libraries(junior_ctrl ${catkin_LIBRARIES} OsqpEigen::OsqpEigen)
     add_dependencies(junior_ctrl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 endif()
 if(DEBUG)

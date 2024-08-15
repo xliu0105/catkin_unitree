@@ -1,4 +1,4 @@
-#!/home/liu_xu/anaconda3/envs/ros_env/bin/python3
+#!/home/liu_xu/anaconda3/envs/main_use/bin/python3
 # -*- coding: utf-8 -*-
 
 # Software License Agreement (BSD License)
@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/home/liu_xu/liuxu_Documents/catkin_unitree/devel;/opt/ros/noetic'.split(';')
+            CMAKE_PREFIX_PATH = r'/opt/openrobots;/opt/ros/noetic;/opt/openrobots'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

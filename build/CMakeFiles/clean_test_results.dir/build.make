@@ -67,7 +67,7 @@ include CMakeFiles/clean_test_results.dir/compiler_depend.make
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/home/liu_xu/anaconda3/envs/ros_env/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/liu_xu/liuxu_Documents/catkin_unitree/build/test_results
+	/home/liu_xu/anaconda3/envs/main_use/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/liu_xu/liuxu_Documents/catkin_unitree/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make

@@ -39,9 +39,9 @@ class CmdPanel{
 public:
     CmdPanel(){}
     virtual ~CmdPanel(){}
-    UserCommand getUserCmd(){return userCmd;}
-    UserValue getUserValue(){return userValue;}
-    void setPassive(){userCmd = UserCommand::L2_B;}
+    UserCommand getUserCmd(){return userCmd;} // 返回用户命令
+    UserValue getUserValue(){return userValue;} // 返回用户值
+    void setPassive(){userCmd = UserCommand::L2_B;} // L2_B代表passive
     void setZero(){userValue.setZero();}
 #ifdef COMPILE_WITH_REAL_ROBOT
     virtual void receiveHandle(UNITREE_LEGGED_SDK::LowState *lowState){};

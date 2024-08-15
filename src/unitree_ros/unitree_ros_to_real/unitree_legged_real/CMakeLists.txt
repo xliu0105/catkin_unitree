@@ -17,9 +17,11 @@ include_directories(
     ${catkin_INCLUDE_DIRS}
 )
 
-set(UNITREE_SDK_VERSION "3_2")
-set(UNITREE_PLATFORM "amd64")
-set(UNITREE_LEGGED_SDK_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../unitree_legged_sdk)
+# 以下相比于github上的CMakeLists.txt文件做了修改，将一些需要在bashrc中定义的变量直接在这里定义
+
+set(UNITREE_SDK_VERSION "3_2") # 直接在这里定义SDK版本，不要在bashrc中定义
+set(UNITREE_PLATFORM "amd64") # 直接在这里定义平台，不要在bashrc中定义
+set(UNITREE_LEGGED_SDK_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../unitree_legged_sdk) # 直接在这里定义SDK路径，不要在bashrc中定义
 
 set(CMAKE_CXX_FLAGS "-O3")
 

@@ -4,8 +4,10 @@
 #ifndef MATHTYPES_H
 #define MATHTYPES_H
 
-#include <eigen3/Eigen/Dense>
-
+#include <Eigen/Dense> // 引入Eigen库
+#include <Eigen/Sparse> // 引入Eigen库稀疏矩阵
+#include <Eigen/StdVector> // 引入Eigen库的标准向量
+// 这个Eigen库的头文件好像就需要放到一起？我写MPC控制器需要用到StdVector和Sparse，如果这两个单独放在MPC_Controller.h中，就会报错，所以我把这三个头文件都放在了这里
 /************************/
 /******** Vector ********/
 /************************/
@@ -29,6 +31,8 @@ using VecInt4 = typename Eigen::Matrix<int, 4, 1>;
 
 // 12x1 Vector
 using Vec12 = typename Eigen::Matrix<double, 12, 1>;
+
+using Vec14 = typename Eigen::Matrix<double, 14, 1>;
 
 // 18x1 Vector
 using Vec18 = typename Eigen::Matrix<double, 18, 1>;

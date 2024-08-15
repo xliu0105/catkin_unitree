@@ -77,7 +77,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/home/liu_xu/anaconda3/envs/ros_env/bin/python3" -m compileall "/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/python3/dist-packages/unitree_legged_msgs")
+  execute_process(COMMAND "/home/liu_xu/anaconda3/envs/main_use/bin/python3" -m compileall "/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/python3/dist-packages/unitree_legged_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

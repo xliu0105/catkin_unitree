@@ -401,6 +401,30 @@ src/FSM/State_Trotting.cpp.s:
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting.cpp.s
 .PHONY : src/FSM/State_Trotting.cpp.s
 
+src/FSM/State_Trotting_Custon.o: src/FSM/State_Trotting_Custon.cpp.o
+.PHONY : src/FSM/State_Trotting_Custon.o
+
+# target to build an object file
+src/FSM/State_Trotting_Custon.cpp.o:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o
+.PHONY : src/FSM/State_Trotting_Custon.cpp.o
+
+src/FSM/State_Trotting_Custon.i: src/FSM/State_Trotting_Custon.cpp.i
+.PHONY : src/FSM/State_Trotting_Custon.i
+
+# target to preprocess a source file
+src/FSM/State_Trotting_Custon.cpp.i:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.i
+.PHONY : src/FSM/State_Trotting_Custon.cpp.i
+
+src/FSM/State_Trotting_Custon.s: src/FSM/State_Trotting_Custon.cpp.s
+.PHONY : src/FSM/State_Trotting_Custon.s
+
+# target to generate assembly for a file
+src/FSM/State_Trotting_Custon.cpp.s:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.s
+.PHONY : src/FSM/State_Trotting_Custon.cpp.s
+
 src/FSM/State_move_base.o: src/FSM/State_move_base.cpp.o
 .PHONY : src/FSM/State_move_base.o
 
@@ -641,6 +665,54 @@ src/control/Estimator.cpp.s:
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.s
 .PHONY : src/control/Estimator.cpp.s
 
+src/control/MPC_Controller.o: src/control/MPC_Controller.cpp.o
+.PHONY : src/control/MPC_Controller.o
+
+# target to build an object file
+src/control/MPC_Controller.cpp.o:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o
+.PHONY : src/control/MPC_Controller.cpp.o
+
+src/control/MPC_Controller.i: src/control/MPC_Controller.cpp.i
+.PHONY : src/control/MPC_Controller.i
+
+# target to preprocess a source file
+src/control/MPC_Controller.cpp.i:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.i
+.PHONY : src/control/MPC_Controller.cpp.i
+
+src/control/MPC_Controller.s: src/control/MPC_Controller.cpp.s
+.PHONY : src/control/MPC_Controller.s
+
+# target to generate assembly for a file
+src/control/MPC_Controller.cpp.s:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.s
+.PHONY : src/control/MPC_Controller.cpp.s
+
+src/control/MPC_Controller_Constraint.o: src/control/MPC_Controller_Constraint.cpp.o
+.PHONY : src/control/MPC_Controller_Constraint.o
+
+# target to build an object file
+src/control/MPC_Controller_Constraint.cpp.o:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o
+.PHONY : src/control/MPC_Controller_Constraint.cpp.o
+
+src/control/MPC_Controller_Constraint.i: src/control/MPC_Controller_Constraint.cpp.i
+.PHONY : src/control/MPC_Controller_Constraint.i
+
+# target to preprocess a source file
+src/control/MPC_Controller_Constraint.cpp.i:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.i
+.PHONY : src/control/MPC_Controller_Constraint.cpp.i
+
+src/control/MPC_Controller_Constraint.s: src/control/MPC_Controller_Constraint.cpp.s
+.PHONY : src/control/MPC_Controller_Constraint.s
+
+# target to generate assembly for a file
+src/control/MPC_Controller_Constraint.cpp.s:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.s
+.PHONY : src/control/MPC_Controller_Constraint.cpp.s
+
 src/interface/IOROS.o: src/interface/IOROS.cpp.o
 .PHONY : src/interface/IOROS.o
 
@@ -850,6 +922,9 @@ help:
 	@echo "... src/FSM/State_Trotting.o"
 	@echo "... src/FSM/State_Trotting.i"
 	@echo "... src/FSM/State_Trotting.s"
+	@echo "... src/FSM/State_Trotting_Custon.o"
+	@echo "... src/FSM/State_Trotting_Custon.i"
+	@echo "... src/FSM/State_Trotting_Custon.s"
 	@echo "... src/FSM/State_move_base.o"
 	@echo "... src/FSM/State_move_base.i"
 	@echo "... src/FSM/State_move_base.s"
@@ -880,6 +955,12 @@ help:
 	@echo "... src/control/Estimator.o"
 	@echo "... src/control/Estimator.i"
 	@echo "... src/control/Estimator.s"
+	@echo "... src/control/MPC_Controller.o"
+	@echo "... src/control/MPC_Controller.i"
+	@echo "... src/control/MPC_Controller.s"
+	@echo "... src/control/MPC_Controller_Constraint.o"
+	@echo "... src/control/MPC_Controller_Constraint.i"
+	@echo "... src/control/MPC_Controller_Constraint.s"
 	@echo "... src/interface/IOROS.o"
 	@echo "... src/interface/IOROS.i"
 	@echo "... src/interface/IOROS.s"

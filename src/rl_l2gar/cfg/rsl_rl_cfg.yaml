@@ -1,0 +1,36 @@
+robot_name: a1
+model_path: /home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/weights/rsl_rl_model.pt
+actor_hidden_dims:
+  - 128
+  - 64
+  - 32
+critic_hidden_dims:
+  - 128
+  - 64
+  - 32
+num_obs: 45
+num_actions: 12
+ctrl_mode: 0
+sim_dt: 0.002
+decimation: 4
+joint_offset:
+  - 0.1
+  - -0.1
+  - 0.1
+  - -0.1
+  - 0.8
+  - 0.8
+  - 1.0
+  - 1.0
+  - -1.5
+  - -1.5
+  - -1.5
+  - -1.5
+actionScale: 0.25
+activation: elu
+empirical_normalization: False
+net_framework: ActorCritic
+getKeyboardCmd: True
+xyLinevelLimit: 0.5
+zAngvelLimit: 0.5
+device: cpu

@@ -25,13 +25,13 @@ private:
     void changeValue();
 
     pthread_t _tid;
-    float sensitivityLeft = 0.05;
+    float sensitivityLeft = 0.05; // 在持续按下w键或s键时，增量值
     float sensitivityRight = 0.05;
     struct termios _oldSettings, _newSettings;
     fd_set set;
     int res;
     int ret;
-    char _c;
+    char _c; // 读取键盘输入的字符存储在_c中
 };
 
 #endif  // KEYBOARD_H

@@ -209,10 +209,24 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting.cp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting.cpp.s"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/FSM/State_Trotting.cpp -o CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting.cpp.s
 
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/FSM/State_Trotting_Custon.cpp
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o"
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/FSM/State_Trotting_Custon.cpp
+
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.i"
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/FSM/State_Trotting_Custon.cpp > CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.i
+
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.s"
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/FSM/State_Trotting_Custon.cpp -o CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.s
+
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/FSM/State_move_base.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/FSM/State_move_base.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.i: cmake_force
@@ -226,7 +240,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.c
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/Gait/FeetEndCal.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/Gait/FeetEndCal.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.i: cmake_force
@@ -240,7 +254,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.s
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/Gait/GaitGenerator.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/Gait/GaitGenerator.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.i: cmake_force
@@ -254,7 +268,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/Gait/WaveGenerator.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/Gait/WaveGenerator.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.i: cmake_force
@@ -268,7 +282,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/common/LowPassFilter.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/common/LowPassFilter.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.i: cmake_force
@@ -282,7 +296,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/common/unitreeLeg.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/common/unitreeLeg.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.i: cmake_force
@@ -296,7 +310,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/common/unitreeRobot.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/common/unitreeRobot.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.i: cmake_force
@@ -310,7 +324,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.c
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/BalanceCtrl.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/BalanceCtrl.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.i: cmake_force
@@ -324,7 +338,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.c
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/ControlFrame.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/ControlFrame.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.i: cmake_force
@@ -338,7 +352,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/Estimator.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/Estimator.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.i: cmake_force
@@ -349,10 +363,38 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.s"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/Estimator.cpp -o CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.s
 
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/MPC_Controller.cpp
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o"
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/MPC_Controller.cpp
+
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.i"
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/MPC_Controller.cpp > CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.i
+
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.s"
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/MPC_Controller.cpp -o CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.s
+
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/MPC_Controller_Constraint.cpp
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o"
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/MPC_Controller_Constraint.cpp
+
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.i"
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/MPC_Controller_Constraint.cpp > CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.i
+
+unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.s"
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/control/MPC_Controller_Constraint.cpp -o CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.s
+
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/interface/IOROS.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/interface/IOROS.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.i: cmake_force
@@ -366,7 +408,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.s
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/interface/IOSDK.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/interface/IOSDK.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.i: cmake_force
@@ -380,7 +422,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.s
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/interface/KeyBoard.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/interface/KeyBoard.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.i: cmake_force
@@ -394,7 +436,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/interface/WirelessHandle.cpp
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o -MF CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o.d -o CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/interface/WirelessHandle.cpp
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.i: cmake_force
@@ -408,7 +450,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHan
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/quadProgpp/Array.cc
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o -MF CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o.d -o CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/quadProgpp/Array.cc
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.i: cmake_force
@@ -422,7 +464,7 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.s
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/flags.make
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.o: /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/quadProgpp/QuadProg++.cc
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.o: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.o"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.o -MF CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.o.d -o CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.o -c /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/src/quadProgpp/QuadProg++.cc
 
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.i: cmake_force
@@ -445,6 +487,7 @@ junior_ctrl_OBJECTS = \
 "CMakeFiles/junior_ctrl.dir/src/FSM/State_StepTest.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/FSM/State_SwingTest.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting.cpp.o" \
+"CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o" \
@@ -455,6 +498,8 @@ junior_ctrl_OBJECTS = \
 "CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o" \
+"CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o" \
+"CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o" \
 "CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o" \
@@ -475,6 +520,7 @@ junior_ctrl_EXTERNAL_OBJECTS =
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_StepTest.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_SwingTest.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting.cpp.o
+/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting_Custon.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o
@@ -485,6 +531,8 @@ junior_ctrl_EXTERNAL_OBJECTS =
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o
+/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller.cpp.o
+/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/MPC_Controller_Constraint.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o
@@ -533,8 +581,10 @@ junior_ctrl_EXTERNAL_OBJECTS =
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/local/lib/libOsqpEigen.so.0.8.1
+/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/local/lib/libosqp.so
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_guide/unitree_guide && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/junior_ctrl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
