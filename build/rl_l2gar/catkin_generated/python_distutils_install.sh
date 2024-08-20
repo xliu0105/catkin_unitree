@@ -26,7 +26,7 @@ echo_and_run /usr/bin/env \
     CATKIN_BINARY_DIR="/home/liu_xu/liuxu_Documents/catkin_unitree/build" \
     "/home/liu_xu/anaconda3/envs/main_use/bin/python3" \
     "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/setup.py" \
-     \
+    egg_info --egg-base /home/liu_xu/liuxu_Documents/catkin_unitree/build/rl_l2gar \
     build --build-base "/home/liu_xu/liuxu_Documents/catkin_unitree/build/rl_l2gar" \
     install \
     --root="${DESTDIR-/}" \

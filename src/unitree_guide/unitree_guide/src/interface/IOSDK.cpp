@@ -27,7 +27,7 @@ IOSDK::IOSDK():_safe(UNITREE_LEGGED_SDK::LeggedType::Aliengo), _udp(UNITREE_LEGG
 IOSDK::IOSDK():_safe(UNITREE_LEGGED_SDK::LeggedType::Aliengo), _udp(UNITREE_LEGGED_SDK::LOWLEVEL){
     std::cout << "The control interface for real robot" << std::endl;
     _udp.InitCmdData(_lowCmd);
-    cmdPanel = new WirelessHandle();
+    cmdPanel = new WirelessHandle();  // WirelessHandle类继承于CmdPanel类，重写了receiveHandle方法，专门用于处理实体机器人的遥控器数据
 
 #ifdef COMPILE_WITH_MOVE_BASE
     _pub = _nh.advertise<sensor_msgs::JointState>("/realRobot/joint_states", 20);

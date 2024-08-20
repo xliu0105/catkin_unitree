@@ -71,9 +71,11 @@ if(CATKIN_MAKE)
     )
     find_package(OsqpEigen REQUIRED)
     find_package(osqp REQUIRED)
+    add_library(WirelessHandler src/interface/WirelessHandle.cpp)  # 添加一个库，用来给我自定义的rl_l2gar包使用
     catkin_package(
-        CATKIN_DEPENDS 
-        unitree_legged_msgs 
+        INCLUDE_DIRS include
+        LIBRARIES WirelessHandler
+        CATKIN_DEPENDS unitree_legged_msgs roscpp std_msgs controller_manager joint_state_controller robot_state_publisher
     )
 endif()
 

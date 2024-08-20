@@ -122,7 +122,7 @@ void Custom::RobotControl()
 
     }
 
-    if(motiontime > 10){
+    if(motiontime > 10){  // 这里要在10次控制之后才执行保护动作，可能是为了防止在刚开始的时候就执行保护动作，导致机器人无法正常启动
         safe.PositionLimit(cmd);
         safe.PowerProtect(cmd, state, 1);
         // You can uncomment it for position protection

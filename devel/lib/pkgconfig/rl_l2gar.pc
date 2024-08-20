@@ -3,6 +3,6 @@ prefix=/home/liu_xu/liuxu_Documents/catkin_unitree/devel
 Name: rl_l2gar
 Description: Description of rl_l2gar
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/liu_xu/liuxu_Documents/catkin_unitree/devel/include
 Libs: -L${prefix}/lib 
-Requires: roscpp rospy std_msgs unitree_legged_msgs
+Requires: roscpp rospy std_msgs unitree_legged_msgs unitree_guide message_runtime

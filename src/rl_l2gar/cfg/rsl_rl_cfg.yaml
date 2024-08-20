@@ -10,7 +10,7 @@ critic_hidden_dims:
   - 32
 num_obs: 45
 num_actions: 12
-ctrl_mode: 0
+ctrl_mode: 0  # 在本例的实现中，0代表位置控制，1代表速度控制，2代表力矩控制，3代表混合控制
 sim_dt: 0.002
 decimation: 4
 joint_offset:
@@ -31,6 +31,6 @@ activation: elu
 empirical_normalization: False
 net_framework: ActorCritic
 getKeyboardCmd: True
-xyLinevelLimit: 0.5
-zAngvelLimit: 0.5
+xyLinevelLimit: 1.0
+zAngvelLimit: 1.0
 device: cpu

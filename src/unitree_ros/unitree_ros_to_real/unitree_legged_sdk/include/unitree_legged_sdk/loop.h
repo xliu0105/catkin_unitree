@@ -24,6 +24,8 @@ typedef boost::function<void ()> Callback;
 
 class Loop {
 public:
+  // 根据GPT的回答，这里的_bindCPU应该是用来绑定这个Loop线程到某个特定的CPU核心上的，如果是-1的话表示让操作系统自由调度线程。
+  // 这个_bindCPU的范围应该是0到CPU核心数-1。绑定核心可以避免线程迁移开销，同时更有利于利用核心的缓存。同时在有异构核心的系统中，不同的核心可能有不同的性能，绑定核心可以保证线程在性能较好的核心上运行。
   Loop(std::string name, float period, int bindCPU = -1):_name(name), _period(period), _bindCPU(bindCPU) {}
   ~Loop();
   void start();

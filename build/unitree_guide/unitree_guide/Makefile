@@ -172,6 +172,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/rule:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/rule
+.PHONY : unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/rule
+
+# Convenience name for target.
+WirelessHandler: unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/rule
+.PHONY : WirelessHandler
+
+# fast build rule for target.
+WirelessHandler/fast:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/build.make unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/build
+.PHONY : WirelessHandler/fast
+
+# Convenience name for target.
 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/rule:
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/rule
 .PHONY : unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/rule
@@ -790,6 +804,7 @@ src/interface/WirelessHandle.o: src/interface/WirelessHandle.cpp.o
 
 # target to build an object file
 src/interface/WirelessHandle.cpp.o:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/build.make unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/src/interface/WirelessHandle.cpp.o
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o
 .PHONY : src/interface/WirelessHandle.cpp.o
 
@@ -798,6 +813,7 @@ src/interface/WirelessHandle.i: src/interface/WirelessHandle.cpp.i
 
 # target to preprocess a source file
 src/interface/WirelessHandle.cpp.i:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/build.make unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/src/interface/WirelessHandle.cpp.i
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.i
 .PHONY : src/interface/WirelessHandle.cpp.i
 
@@ -806,6 +822,7 @@ src/interface/WirelessHandle.s: src/interface/WirelessHandle.cpp.s
 
 # target to generate assembly for a file
 src/interface/WirelessHandle.cpp.s:
+	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/build.make unitree_guide/unitree_guide/CMakeFiles/WirelessHandler.dir/src/interface/WirelessHandle.cpp.s
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build && $(MAKE) $(MAKESILENT) -f unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/build.make unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.s
 .PHONY : src/interface/WirelessHandle.cpp.s
 
@@ -894,6 +911,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... WirelessHandler"
 	@echo "... junior_ctrl"
 	@echo "... src/FSM/FSM.o"
 	@echo "... src/FSM/FSM.i"

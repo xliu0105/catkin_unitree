@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(rl_l2gar)
 
+set(ROBOT_TYPE A1)  # The type of robot, support Go1 and A1 currently
+
+
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
 
@@ -15,28 +18,73 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   joint_state_publisher
   robot_state_publisher
+  unitree_guide
+  message_generation
 )
 
 catkin_python_setup()
 
+add_message_files(
+  FILES
+  userValue_msg.msg
+  LowState_rl.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  unitree_legged_msgs
+)
+
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES rl_l2gar
- CATKIN_DEPENDS roscpp rospy std_msgs unitree_legged_msgs
+ CATKIN_DEPENDS roscpp rospy std_msgs unitree_legged_msgs unitree_guide message_runtime
 #  DEPENDS system_lib
 )
 
 include_directories(
-# include
+  include
   ${catkin_INCLUDE_DIRS}
 )
+
+if(${ROBOT_TYPE} STREQUAL "A1")
+  add_definitions(-DROBOT_TYPE_A1)
+  include_directories(
+    library/unitree_legged_sdk_3.2/include
+  )
+  link_directories(
+    library/unitree_legged_sdk_3.2/lib
+  )
+elseif(${ROBOT_TYPE} STREQUAL "Go1")
+  add_definitions(-DROBOT_TYPE_Go1)
+  include_directories(
+    library/unitree_go1_sdk_3.8.0/include
+  )
+  link_directories(
+    library/unitree_go1_sdk_3.8.0/lib
+  )
+else()
+  message(FATAL_ERROR "[CMake ERROR] The ROBOT_TYPE is error")
+endif()
+
+file(GLOB_RECURSE rl_l2r_files ${CMAKE_CURRENT_SOURCE_DIR}/src/rl_l2r/*.cpp)  # 查找所有的cpp文件
+
+add_executable(rl_real_node ${rl_l2r_files})
+
+add_dependencies(rl_real_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+target_link_libraries(rl_real_node PUBLIC
+  unitree_legged_sdk_amd64
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(rl_real_node PUBLIC -pthread lcm)
 
 file(GLOB_RECURSE Python_file ${CMAKE_CURRENT_SOURCE_DIR}/scripts/*.py)  # 查找所有的python文件
 
 # 这里是注册python脚本
 catkin_install_python(PROGRAMS
-  scripts/rl_gazebo.py
-  # ${Python_file}
+  scripts/rl_l2g/rl_gazebo.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -99,7 +147,7 @@ catkin_install_python(PROGRAMS
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   ste_msgs
+#   std_msgs
 # )
 
 ################################################
@@ -134,7 +182,7 @@ catkin_install_python(PROGRAMS
 # catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES rl_l2gar
-#  CATKIN_DEPENDS roscpp rospy ste_msgs
+#  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 # )
 

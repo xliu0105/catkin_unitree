@@ -21,6 +21,8 @@ constexpr char UDP_SERVER_IP_SPORT[] = "192.168.123.161";   // target IP address
 // Notice: User defined data(like struct) should add crc(4Byte) at the end.
 class UDP {
 public:
+    // 这里的UDP构造函数中，第二个参数是highControl，分为Basic和Sport两种，我猜basic模式就是指所有的运算在用户电脑上完成，并直接将控制命令通信给主控板；
+    // 而sport模式应该是指将代码拷贝到UP Board上，由UP Board完成所有的运算，并将控制命令通信给主控板。
     UDP(uint8_t level, HighLevelType highControl = HighLevelType::Basic);  // unitree dafault IP and Port
     UDP(uint16_t localPort, const char* targetIP, uint16_t targetPort, int sendLength, int recvLength);
     UDP(uint16_t localPort, uint16_t targetPort, int sendLength, int recvLength); // as server, client IP can change

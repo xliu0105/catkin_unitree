@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -O3 -shared -Wl,-soname,libWirelessHandler.so -o /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/libWirelessHandler.so CMakeFiles/WirelessHandler.dir/src/interface/WirelessHandle.cpp.o 

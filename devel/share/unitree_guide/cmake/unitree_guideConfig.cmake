@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(unitree_guide_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/include " STREQUAL " ")
   set(unitree_guide_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -116,7 +116,7 @@ if(NOT " " STREQUAL " ")
   endforeach()
 endif()
 
-set(libraries "")
+set(libraries "WirelessHandler")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -185,7 +185,7 @@ foreach(t ${unitree_guide_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "unitree_legged_msgs")
+set(depends "unitree_legged_msgs;roscpp;std_msgs;controller_manager;joint_state_controller;robot_state_publisher")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
