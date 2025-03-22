@@ -1,8 +1,0 @@
-prefix=/home/liu_xu/liuxu_Documents/catkin_unitree/install
-
-Name: z1_description
-Description: Description of z1_description
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,8 +1,0 @@
-prefix=/home/liu_xu/liuxu_Documents/catkin_unitree/install
-
-Name: unitree_guide
-Description: Description of unitree_guide
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lWirelessHandler
-Requires: unitree_legged_msgs roscpp std_msgs controller_manager joint_state_controller robot_state_publisher

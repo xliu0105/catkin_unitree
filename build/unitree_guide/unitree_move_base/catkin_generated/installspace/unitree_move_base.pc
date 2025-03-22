@@ -1,8 +1,0 @@
-prefix=/home/liu_xu/liuxu_Documents/catkin_unitree/install
-
-Name: unitree_move_base
-Description: Description of unitree_move_base
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

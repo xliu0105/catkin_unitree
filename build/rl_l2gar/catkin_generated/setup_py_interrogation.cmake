@@ -1,7 +1,0 @@
-set(rl_l2gar_SETUP_PY_SETUP_MODULE "setuptools")
-set(rl_l2gar_SETUP_PY_VERSION "0.0.0")
-set(rl_l2gar_SETUP_PY_SCRIPTS "scripts/rl_l2g/rl_gazebo.py")
-set(rl_l2gar_SETUP_PY_PACKAGES "utils;rl_l2g;mdp")
-set(rl_l2gar_SETUP_PY_PACKAGE_DIRS "scripts/utils;scripts/rl_l2g;scripts/mdp")
-set(rl_l2gar_SETUP_PY_MODULES "")
-set(rl_l2gar_SETUP_PY_MODULE_DIRS "")
