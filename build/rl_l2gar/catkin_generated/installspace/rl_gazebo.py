@@ -23,6 +23,7 @@ class rsl_rl_gazebo(RL_Gazebo):  # 继承于RL_Gazebo类
   # NOTE: 在父类中，get_observation函数并没有被实现，因此需要在子类中实现
   def get_observation(self) -> torch.Tensor:
     
+    # NOTE: 不要用q_obs = [self._motorState[i].q for i in range(12)]这种写法，因为这样对于q和dq需要两个循环
     q_obs = []
     dq_obs = []
     for i in range(12):
@@ -31,12 +32,12 @@ class rsl_rl_gazebo(RL_Gazebo):  # 继承于RL_Gazebo类
     
     # 所有的观测值项都需要是相同维度的，且如果是二维的，第一维度必须是1
     obs = torch.cat((torch.tensor(self.RobotCmd),  # 控制命令
-                     torch.tensor(q_obs),  # 电机关节角度
-                     torch.tensor(dq_obs),  # 电机关节速度
-                     torch.tensor(self.imu.accelerometer) / 10.0,  # 线加速度，在训练时对这个数据进行了缩放
-                     torch.tensor(self.imu.gyroscope),  # 角速度
-                     torch.tensor(self.prev_action_buffer)  # 上一步的动作
-                     ),dim = 0)
+                    torch.tensor(q_obs),  # 电机关节角度
+                    torch.tensor(dq_obs),  # 电机关节速度
+                    torch.tensor(self.imu.accelerometer) / 10.0,  # 线加速度，在训练时对这个数据进行了缩放
+                    torch.tensor(self.imu.gyroscope),  # 角速度
+                    torch.tensor(self.prev_action_buffer)  # 上一步的动作
+                    ),dim = 0)
     return obs  # 返回观测值
     
 # ---------------------------------------------------------------------------------------------------------------------------------------------

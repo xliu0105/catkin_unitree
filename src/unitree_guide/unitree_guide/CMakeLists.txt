@@ -71,6 +71,7 @@ if(CATKIN_MAKE)
     )
     find_package(OsqpEigen REQUIRED)
     find_package(osqp REQUIRED)
+    find_package(Boost REQUIRED COMPONENTS system)
     add_library(WirelessHandler src/interface/WirelessHandle.cpp)  # 添加一个库，用来给我自定义的rl_l2gar包使用
     catkin_package(
         INCLUDE_DIRS include
@@ -125,7 +126,7 @@ file(GLOB_RECURSE SRC_LIST
 
 add_executable(junior_ctrl src/main.cpp ${SRC_LIST})
 if(CATKIN_MAKE)
-    target_link_libraries(junior_ctrl ${catkin_LIBRARIES} OsqpEigen::OsqpEigen)
+    target_link_libraries(junior_ctrl ${catkin_LIBRARIES} OsqpEigen::OsqpEigen ${Boost_LIBRARIES})
     add_dependencies(junior_ctrl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 endif()
 if(DEBUG)

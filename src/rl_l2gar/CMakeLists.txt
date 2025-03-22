@@ -21,6 +21,7 @@ find_package(catkin REQUIRED COMPONENTS
   unitree_guide
   message_generation
 )
+find_package(Boost REQUIRED COMPONENTS system)
 
 catkin_python_setup()
 
@@ -46,6 +47,7 @@ catkin_package(
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
+  ${Boost_INCLUDE_DIRS}
 )
 
 if(${ROBOT_TYPE} STREQUAL "A1")
@@ -77,6 +79,7 @@ add_dependencies(rl_real_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPOR
 target_link_libraries(rl_real_node PUBLIC
   unitree_legged_sdk_amd64
   ${catkin_LIBRARIES}
+  ${Boost_LIBRARIES}
 )
 target_link_libraries(rl_real_node PUBLIC -pthread lcm)
 

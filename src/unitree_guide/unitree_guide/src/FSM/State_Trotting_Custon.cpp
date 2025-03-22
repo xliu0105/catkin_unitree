@@ -115,12 +115,14 @@ void State_Trotting_Custom::run()
     _ctrlComp->setAllStance(); // 调用这个函数可以切换为四足站立
 
   _lowCmd->setTau(_tau); // 将计算得到的关节力矩发送给低级控制器
-  // _lowCmd->setQ(Eigen::Vector<double,12>::Zero()); // 如果只使用力矩控制会不稳定，即如果将关节角度设为0，只传关节力矩，会导致机器人不稳定
-  // if((*_contact).sum() < 4)
-  // {
-  //   _lowCmd->setQ(vec34ToVec12(_qGoal)); // 将计算得到的关节角度发送给低级控制器
-  //   _lowCmd->setQd(vec34ToVec12(_qdGoal)); // 将计算得到的关节角速度发送给低级控制器
-  // }
+  // 对于抬腿足，
+  _lowCmd->setQ(Eigen::Vector<double,12>::Zero()); // 如果只使用力矩控制会不稳定，即如果将关节角度设为0，只传关节力矩，会导致机器人不稳定
+  _lowCmd->setQd(Eigen::Vector<double,12>::Zero());
+  if((*_contact).sum() < 4)
+  {
+    _lowCmd->setQ(vec34ToVec12(_qGoal)); // 将计算得到的关节角度发送给低级控制器
+    _lowCmd->setQd(vec34ToVec12(_qdGoal)); // 将计算得到的关节角速度发送给低级控制器
+  }
 
   for(int i(0); i<4; ++i)
   { // 对于摆动腿来说，其目的是跟踪轨迹，因此其应接近于位置控制，对摆动腿设置setSwingGain，将刚度设为较大的数值

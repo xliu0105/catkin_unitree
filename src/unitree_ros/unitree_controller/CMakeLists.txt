@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(gazebo REQUIRED)
+find_package(Boost REQUIRED COMPONENTS system)
 
 catkin_package(
     CATKIN_DEPENDS 
@@ -39,7 +40,7 @@ add_library(${PROJECT_NAME}
 add_dependencies(${PROJECT_NAME} unitree_legged_msgs_gencpp)
 
 target_link_libraries(${PROJECT_NAME}
-  ${catkin_LIBRARIES} ${EXTRA_LIBS}
+  ${catkin_LIBRARIES} ${EXTRA_LIBS} ${Boost_LIBRARIES}
 )
 
 # add_library(unitreeFootContactPlugin SHARED plugin/foot_contact_plugin.cc)
@@ -49,10 +50,10 @@ target_link_libraries(${PROJECT_NAME}
 # target_link_libraries(unitreeDrawForcePlugin ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
 add_executable(unitree_external_force src/external_force.cpp)
-target_link_libraries(unitree_external_force ${catkin_LIBRARIES})
+target_link_libraries(unitree_external_force ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 
 add_executable(unitree_servo src/servo.cpp)
-target_link_libraries(unitree_servo ${PROJECT_NAME} ${catkin_LIBRARIES})
+target_link_libraries(unitree_servo ${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 
 add_executable(unitree_move_kinetic src/move_publisher.cpp)
-target_link_libraries(unitree_move_kinetic ${catkin_LIBRARIES})
+target_link_libraries(unitree_move_kinetic ${catkin_LIBRARIES} ${Boost_LIBRARIES})

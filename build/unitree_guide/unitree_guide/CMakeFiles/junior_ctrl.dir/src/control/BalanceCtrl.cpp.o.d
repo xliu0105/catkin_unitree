@@ -471,14 +471,12 @@ unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.c
  /usr/include/c++/9/bits/locale_conv.h \
  /usr/include/c++/9/bits/unique_ptr.h \
  /usr/include/c++/9/bits/quoted_string.h \
- /home/liu_xu/anaconda3/envs/main_use/include/eigen3/Eigen/Dense \
- /home/liu_xu/anaconda3/envs/main_use/include/eigen3/Eigen/Core \
- /home/liu_xu/anaconda3/envs/main_use/include/eigen3/Eigen/LU \
- /home/liu_xu/anaconda3/envs/main_use/include/eigen3/Eigen/Cholesky \
- /home/liu_xu/anaconda3/envs/main_use/include/eigen3/Eigen/QR \
- /home/liu_xu/anaconda3/envs/main_use/include/eigen3/Eigen/SVD \
- /home/liu_xu/anaconda3/envs/main_use/include/eigen3/Eigen/Geometry \
- /home/liu_xu/anaconda3/envs/main_use/include/eigen3/Eigen/Eigenvalues \
+ /usr/local/include/eigen3/Eigen/Dense \
+ /usr/local/include/eigen3/Eigen/Core /usr/local/include/eigen3/Eigen/LU \
+ /usr/local/include/eigen3/Eigen/Cholesky \
+ /usr/local/include/eigen3/Eigen/QR /usr/local/include/eigen3/Eigen/SVD \
+ /usr/local/include/eigen3/Eigen/Geometry \
+ /usr/local/include/eigen3/Eigen/Eigenvalues \
  /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/include/common/unitreeRobot.h \
  /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/include/common/unitreeLeg.h \
  /home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_guide/unitree_guide/include/common/enumClass.h \

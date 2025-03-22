@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
     geometry_msgs
     unitree_legged_msgs
 )
+find_package(Boost REQUIRED COMPONENTS system)
 
 catkin_package()
 
@@ -34,7 +35,7 @@ if( ${UNITREE_SDK_VERSION} STREQUAL "3_1")
     add_definitions(-DSDK3_1)
 
     add_executable(lcm_server_3_1 $ENV{ALIENGO_SDK_PATH}/examples/lcm_server.cpp)
-    target_link_libraries(lcm_server_3_1 ${EXTRA_LIBS} ${catkin_LIBRARIES})
+    target_link_libraries(lcm_server_3_1 ${EXTRA_LIBS} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
     add_dependencies(lcm_server_3_1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 elseif( ${UNITREE_SDK_VERSION} STREQUAL "3_2")
@@ -46,22 +47,22 @@ elseif( ${UNITREE_SDK_VERSION} STREQUAL "3_2")
     add_definitions(-DSDK3_2)
 
     add_executable(lcm_server_3_2 ${UNITREE_LEGGED_SDK_PATH}/examples/lcm_server.cpp)
-    target_link_libraries(lcm_server_3_2 ${EXTRA_LIBS} ${catkin_LIBRARIES})
+    target_link_libraries(lcm_server_3_2 ${EXTRA_LIBS} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
     add_dependencies(lcm_server_3_2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 endif()
 
 add_executable(position_lcm src/exe/position_mode.cpp)
-target_link_libraries(position_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
+target_link_libraries(position_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 add_dependencies(position_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 add_executable(velocity_lcm src/exe/velocity_mode.cpp)
-target_link_libraries(velocity_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
+target_link_libraries(velocity_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 add_dependencies(velocity_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 add_executable(torque_lcm src/exe/torque_mode.cpp)
-target_link_libraries(torque_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
+target_link_libraries(torque_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 add_dependencies(torque_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 add_executable(walk_lcm src/exe/walk_mode.cpp)
-target_link_libraries(walk_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
+target_link_libraries(walk_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 add_dependencies(walk_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})

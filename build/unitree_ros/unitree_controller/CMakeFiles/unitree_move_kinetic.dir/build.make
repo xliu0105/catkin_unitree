@@ -139,6 +139,7 @@ unitree_move_kinetic_EXTERNAL_OBJECTS =
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_controller/unitree_move_kinetic: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_controller/unitree_move_kinetic: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_controller/unitree_move_kinetic: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_controller/unitree_move_kinetic: /usr/local/lib/libboost_system.so
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_controller/unitree_move_kinetic: unitree_ros/unitree_controller/CMakeFiles/unitree_move_kinetic.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_controller/unitree_move_kinetic"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_ros/unitree_controller && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unitree_move_kinetic.dir/link.txt --verbose=$(VERBOSE)

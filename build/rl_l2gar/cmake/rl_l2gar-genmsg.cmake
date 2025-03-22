@@ -24,7 +24,7 @@ add_custom_target(_rl_l2gar_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/LowState_rl.msg" NAME_WE)
 add_custom_target(_rl_l2gar_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rl_l2gar" "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/LowState_rl.msg" "rl_l2gar/userValue_msg:unitree_legged_msgs/IMU:unitree_legged_msgs/MotorState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rl_l2gar" "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/LowState_rl.msg" "unitree_legged_msgs/MotorState:unitree_legged_msgs/IMU:rl_l2gar/userValue_msg"
 )
 
 #
@@ -42,7 +42,7 @@ _generate_msg_cpp(rl_l2gar
 _generate_msg_cpp(rl_l2gar
   "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/LowState_rl.msg"
   "${MSG_I_FLAGS}"
-  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg"
+  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rl_l2gar
 )
 
@@ -83,7 +83,7 @@ _generate_msg_eus(rl_l2gar
 _generate_msg_eus(rl_l2gar
   "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/LowState_rl.msg"
   "${MSG_I_FLAGS}"
-  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg"
+  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rl_l2gar
 )
 
@@ -124,7 +124,7 @@ _generate_msg_lisp(rl_l2gar
 _generate_msg_lisp(rl_l2gar
   "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/LowState_rl.msg"
   "${MSG_I_FLAGS}"
-  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg"
+  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rl_l2gar
 )
 
@@ -165,7 +165,7 @@ _generate_msg_nodejs(rl_l2gar
 _generate_msg_nodejs(rl_l2gar
   "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/LowState_rl.msg"
   "${MSG_I_FLAGS}"
-  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg"
+  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rl_l2gar
 )
 
@@ -206,7 +206,7 @@ _generate_msg_py(rl_l2gar
 _generate_msg_py(rl_l2gar
   "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/LowState_rl.msg"
   "${MSG_I_FLAGS}"
-  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg"
+  "/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/unitree_ros/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg;/home/liu_xu/liuxu_Documents/catkin_unitree/src/rl_l2gar/msg/userValue_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rl_l2gar
 )
 

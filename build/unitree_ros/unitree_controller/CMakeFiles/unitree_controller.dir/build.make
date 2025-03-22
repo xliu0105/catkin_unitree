@@ -139,6 +139,7 @@ unitree_controller_EXTERNAL_OBJECTS =
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/libunitree_controller.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/libunitree_controller.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/libunitree_controller.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/libunitree_controller.so: /usr/local/lib/libboost_system.so
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/libunitree_controller.so: unitree_ros/unitree_controller/CMakeFiles/unitree_controller.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/libunitree_controller.so"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_ros/unitree_controller && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unitree_controller.dir/link.txt --verbose=$(VERBOSE)

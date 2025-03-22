@@ -109,6 +109,7 @@ lcm_server_3_2_EXTERNAL_OBJECTS =
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_legged_real/lcm_server_3_2: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_legged_real/lcm_server_3_2: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_legged_real/lcm_server_3_2: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_legged_real/lcm_server_3_2: /usr/local/lib/libboost_system.so
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_legged_real/lcm_server_3_2: unitree_ros/unitree_ros_to_real/unitree_legged_real/CMakeFiles/lcm_server_3_2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_legged_real/lcm_server_3_2"
 	cd /home/liu_xu/liuxu_Documents/catkin_unitree/build/unitree_ros/unitree_ros_to_real/unitree_legged_real && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lcm_server_3_2.dir/link.txt --verbose=$(VERBOSE)

@@ -582,6 +582,7 @@ junior_ctrl_EXTERNAL_OBJECTS =
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/local/lib/libOsqpEigen.so.0.8.1
+/home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/local/lib/libboost_system.so
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: /usr/local/lib/libosqp.so
 /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl: unitree_guide/unitree_guide/CMakeFiles/junior_ctrl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liu_xu/liuxu_Documents/catkin_unitree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable /home/liu_xu/liuxu_Documents/catkin_unitree/devel/lib/unitree_guide/junior_ctrl"

@@ -33,4 +33,4 @@ net_framework: ActorCritic
 getKeyboardCmd: True
 xyLinevelLimit: 1.0
 zAngvelLimit: 1.0
-device: cpu
+device: cuda
