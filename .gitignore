@@ -1,0 +1,8 @@
+# ignore folders
+.vscode/
+build/
+devel/
+
+# ignore files
+.catkin_workspace
+*.log
